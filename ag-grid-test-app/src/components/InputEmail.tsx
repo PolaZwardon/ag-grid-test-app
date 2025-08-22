@@ -30,8 +30,8 @@ export const InputEmail = () => {
 
     return (
         <>
-            <Container style={{ padding: '20px' }}>
-                <Row>
+            <Container>
+                <Row style={{ alignItems: 'center', marginTop: '10px' }}>
                     <Col xs={8}>
                         <Form.Control
                             type="text"
@@ -40,12 +40,12 @@ export const InputEmail = () => {
                             aria-describedby="inputNameHelpBlock"
                             onChange={(e) => setUpdatedEmail(e.target.value)}
                         />
-                        <Form.Text id="passwordHelpBlock" muted>
+                        <Form.Text id="passwordHelpBlock" muted style={{ fontSize: '11px' }}>
                             {error}
                         </Form.Text>
                     </Col>
                     <Col>
-                        <Button variant="primary" onClick={updateEmail}>Change Email</Button>
+                        <Button variant="primary" onClick={updateEmail} style={{ fontSize: '12px' }}>Change Email</Button>
                     </Col>
                 </Row>
             </Container>

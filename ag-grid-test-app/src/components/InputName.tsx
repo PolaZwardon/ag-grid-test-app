@@ -29,8 +29,8 @@ export const InputName = () => {
 
     return (
         <>
-            <Container style={{ padding: '20px' }}>
-                <Row>
+            <Container style={{ marginTop: '10px' }}>
+                <Row style={{ alignItems: 'center', marginTop: '10px' }}>
                     <Col xs={8}>
                         <Form.Control
                             type="text"
@@ -39,12 +39,12 @@ export const InputName = () => {
                             aria-describedby="inputNameHelpBlock"
                             onChange={(e) => setName(e.target.value)}
                         />
-                        <Form.Text id="passwordHelpBlock" muted>
+                        <Form.Text id="passwordHelpBlock" muted style={{ fontSize: '11px' }}>
                             {error}
                         </Form.Text>
                     </Col>
                     <Col>
-                        <Button variant="primary" onClick={updateName}>Change Name</Button>
+                        <Button variant="primary" onClick={updateName} style={{ fontSize: '12px' }}>Change Name</Button>
                     </Col>
                 </Row>
             </Container>
